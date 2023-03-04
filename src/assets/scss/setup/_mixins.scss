@@ -1,0 +1,72 @@
+/* Desktop First */
+@mixin for-mobile-layout {
+  @media (max-width: $screen-m) {
+    @content;
+  }
+}
+
+@mixin for-tablet-layout {
+  @media (min-width: $screen-m) {
+    @content;
+  }
+}
+
+@mixin for-desktop-layout {
+  @media (min-width: $screen-l) {
+    @content;
+  }
+}
+
+@mixin for-wide-layout {
+  @media (min-width: $screen-xl) {
+    @content;
+  }
+}
+
+// Mixin for removing hover effects on iphone screen
+@mixin hover-supported {
+  @media not all and (pointer: coarse) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin btn($type: regular, $bg: $main, $clr: clr3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  text-align: center;
+  @if ($type == cta) {
+    padding: 0.5rem 1.5rem;
+    background-color: $bg;
+    color: $clr;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-family: AvenirRoman;
+  } @else if($type == close) {
+    border-radius: 100px;
+    width: 1rem;
+    height: 1rem;
+    background-color: black;
+    color: aliceblue;
+  } @else if ($type == regular) {
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: aliceblue;
+  }
+}
+
+// LOOPER FOR ANIMATION DELAY
+// @for $i from 1 through 10 {
+//   .search-results-box li:nth-child(#{$i}n) {
+//     animation-delay: #{$i * 0.02}s;
+//   }
+// }

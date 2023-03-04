@@ -1,0 +1,43 @@
+.note-add-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  .wrapper {
+    display: flex;
+    & svg {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+
+    & input {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+    }
+
+    .note-add-btn,
+    .url-btn {
+      margin-right: 0.5rem;
+      align-items: center;
+      display: flex;
+      height: 2.25rem;
+      width: 2.25rem;
+      justify-content: center;
+    }
+    .url-btn.disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  .note-types-wrapper {
+    & svg {
+      opacity: 0.3;
+      height: 1.5rem;
+      width: 1.5rem;
+      // padding: 0 0.5rem;
+      margin-right: 0.5rem;
+      cursor: pointer;
+    }
+  }
+}

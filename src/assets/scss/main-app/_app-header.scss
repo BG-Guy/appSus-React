@@ -1,0 +1,63 @@
+.app-header-container {
+  // background-color: #e91e63e3;
+  background: none;
+}
+
+.app-header {
+  color: black;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .active {
+    border-bottom: 1px solid white;
+  }
+
+  .logo {
+    flex-grow: 1;
+    font-family: AvenirHeavy;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    padding: 0 1rem;
+    cursor: pointer;
+  }
+
+  .back {
+    flex-grow: 1;
+  }
+
+  .nav-links {
+    width: 50%;
+    height: 100%;
+    @include align-center;
+    gap: 50px;
+    .nav-link {
+      color: white;
+      height: 100%;
+      flex: 1;
+      @include align-center;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .desktop {
+    display: none;
+    @include for-desktop-layout {
+      display: flex;
+    }
+  }
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  z-index: 10;
+  fill: white;
+  padding: 0 1rem;
+}

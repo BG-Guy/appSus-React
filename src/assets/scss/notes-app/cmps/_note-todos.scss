@@ -1,0 +1,45 @@
+.note-todos {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .note-title {
+    padding: 1rem 0;
+  }
+
+  .todo-add-wrapper {
+    display: flex;
+
+    .todo-add-input {
+      padding: 0.5rem 0;
+    }
+
+    .add-btn svg {
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  .todos-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    .todo {
+      display: grid;
+      grid-template-columns: 20px auto 20px;
+
+      .todo-title {
+        font-family: AvenirMedium;
+        font-size: 1rem;
+      }
+
+      .todo-done {
+        text-decoration: line-through;
+      }
+
+      & span {
+        cursor: pointer;
+      }
+    }
+  }
+}

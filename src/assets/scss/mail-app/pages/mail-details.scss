@@ -1,0 +1,64 @@
+.mail-details-container {
+  height: 80vh;
+  width: 100vw;
+  display: grid;
+
+  .main-content {
+    height: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    .actions-wrapper {
+      width: 100%;
+      height: 5%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .action {
+        padding: 0 1rem;
+        margin: 0 1rem;
+        width: 2rem;
+        height: 100%;
+        display: flex;
+        :hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .mail-content {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .reply-opts {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      padding: 2rem 0;
+      span {
+        width: 3rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+        margin: 0 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

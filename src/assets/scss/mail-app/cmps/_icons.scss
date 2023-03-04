@@ -1,0 +1,79 @@
+.incoming-mail-icon {
+  height: 20px;
+  width: 20px;
+  margin: 0 0.5rem;
+}
+
+.compose-email-icon {
+  height: 20px;
+  width: 20px;
+  margin: 0 0.5rem;
+}
+
+// .fav-icon {
+//   background-image: url(//ssl.gstatic.com/ui/v1/icons/mail/gm3/2x/star_baseline_nv700_20dp.png);
+//   background-position: left;
+//   background-repeat: no-repeat;
+//   background-size: 20px;
+//   height: 20px;
+//   width: 20px;
+//   margin-right: 10px;
+// }
+
+.important-icon {
+  background-image: url(//ssl.gstatic.com/ui/v1/icons/mail/gm3/2x/label_important_baseline_nv700_20dp.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  height: 20px;
+  width: 20px;
+  margin: 0 0.5rem;
+}
+
+.important-icon {
+  background-image: url(//ssl.gstatic.com/ui/v1/icons/mail/gm3/2x/label_important_fill_baseline_p900_20dp.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.sent-icon {
+  height: 20px;
+  width: 20px;
+  margin: 0 0.5rem;
+}
+
+.fullscreen-btn {
+  background-image: url("//ssl.gstatic.com/ui/v1/icons/mail/rfr/ic_close_fullscreen_16px_2x.png");
+  -webkit-background-size: 16px;
+  background-size: 16px;
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+}
+
+.close-btn {
+  background-image: url("//ssl.gstatic.com/ui/v1/icons/mail/rfr/ic_close_16px_2x.png");
+  -webkit-background-size: 16px;
+  background-size: 16px;
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+}
+
+.trash-icon {
+  // background-image: url(//ssl.gstatic.com/ui/v1/icons/mail/gm3/2x/delete_baseline_nv700_20dp.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  height: 20px;
+  width: 20px;
+  margin: 0 0.5rem;
+}
+
+.favourite-icon {
+  height: 20px;
+  width: 20px;
+  margin: 0 0.5rem;
+  z-index: 5;
+}

@@ -1,0 +1,55 @@
+.mail-list {
+  flex-direction: column;
+  grid-area: mail-list;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: scroll;
+  min-width: 400px;
+  box-sizing: border-box;
+
+  .mail-row {
+    display: grid;
+    grid-template-columns: 50px auto;
+    min-width: 500px;
+    height: 2rem;
+    place-items: center;
+    background-color: #fff;
+    &:first-child {
+      border-top: 1px solid #ecf0f1;
+    }
+    border-bottom: 1px solid #ecf0f1;
+
+    &:hover {
+      box-shadow: inset 2px 0 3px #dadce0, inset -1px 0 0 #dadce0,
+        0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+      z-index: 2;
+      cursor: pointer;
+    }
+  }
+  .mail-subject {
+    cursor: pointer;
+  }
+
+  .mail-info {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 150px 150px 150px 100px;
+    h4 {
+      overflow-x: hidden;
+    }
+    @include for-tablet-layout {
+      font-size: 1.3rem;
+    }
+    @include for-mobile-layout {
+      font-size: 1rem;
+    }
+    &.read {
+      font-family: AvenirLight;
+    }
+
+    &.unread {
+      font-family: AvenirHeavy;
+    }
+  }
+}

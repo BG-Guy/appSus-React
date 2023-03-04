@@ -1,0 +1,35 @@
+.mail-edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .edit-mail-btn {
+    margin: 1rem 0;
+    position: relative;
+    font-size: 3rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-top: 20px;
+    }
+
+    button {
+      width: 50%;
+      margin-top: 40px;
+      align-self: center;
+      background-color: #e91e63e3;
+      font-family: AvenirRoman;
+      color: white;
+      aspect-ratio: 3/1;
+      font-size: 1rem;
+      &:hover {
+        background-color: #e93370e3;
+      }
+    }
+  }
+}

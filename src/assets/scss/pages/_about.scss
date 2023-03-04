@@ -1,0 +1,143 @@
+.about {
+  background-color: $secondary;
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  margin: auto;
+  padding: 0 1rem;
+  border-radius: 10px;
+
+  & .empty-div {
+    width: 50px;
+    aspect-ratio: 16/9;
+  }
+  * {
+    color: white;
+  }
+
+  .nav-links-container {
+    overflow: hidden;
+    width: 100%;
+    height: 4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .nav-links {
+      position: absolute;
+      transform: translateY(100%);
+      transition: all ease-in-out;
+      animation: slide-up 0.9s forwards;
+      animation-delay: 0.9s;
+      // background-color: #fff;
+      .active {
+        text-decoration: underline;
+      }
+
+      > * {
+        font-size: 2rem;
+        font-family: AvenirHeavy;
+        color: $main;
+        cursor: pointer;
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .skills-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    li {
+      position: relative;
+      font-size: 1.5rem;
+      font-family: Raleway;
+      font-weight: 400;
+      width: fit-content;
+      // left: 20px;
+
+      @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+          &::after {
+            position: absolute;
+            overflow: hidden;
+            content: "";
+            left: 0px;
+            width: 100%;
+            height: 2rem;
+            border-left: 2px solid $secondary;
+            background-color: $secondary;
+            transition: left 0.5s ease-in;
+            animation: reveal 0.8s ease-out forwards;
+            animation-delay: #{$i * 0.9}s;
+          }
+        }
+      }
+    }
+  }
+
+  .visions-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    justify-content: center;
+    line-height: 1.8;
+    align-items: center;
+
+    li {
+      width: fit-content;
+      font-size: 1.5rem;
+      font-family: AvenirRoman;
+    }
+  }
+
+  .title,
+  .sub-title {
+    font-size: 3rem;
+    font-family: Valencia;
+    letter-spacing: 3px;
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  // .title,
+  // .sub-title {
+  //   position: relative;
+  //   width: fit-content;
+  //   top: 0.5rem;
+  //   margin-bottom: 1rem;
+  //   overflow: hidden;
+  // }
+
+  .title::after,
+  .sub-title::after {
+    position: absolute;
+    overflow: hidden;
+    content: "";
+    left: 0px;
+    height: 100px;
+    width: 1000px;
+    border-left: 2px solid $secondary;
+    background-color: $secondary;
+    transition: left 5s ease-in;
+    animation: reveal 8s ease-out forwards;
+  }
+
+  .title::after {
+    animation-delay: 0.9s;
+  }
+
+  .sub-title::after {
+    animation-delay: 0.9s;
+  }
+
+  nav {
+    margin-top: 1rem;
+    a {
+      margin: 0.5rem;
+    }
+  }
+}

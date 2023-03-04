@@ -1,0 +1,36 @@
+.carousel-container {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  @include for-tablet-layout {
+    width: 250px;
+    height: 250px;
+  }
+  @include for-mobile-layout {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  .btn-wrapper {
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,39 @@
+.footer-container {
+  // background-color: $main;
+  position: relative;
+  margin-top: auto;
+  height: 10vh;
+  .footer {
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .logo {
+  //   flex-grow: 1;
+  //   margin-left: 1rem;
+  //   font-family: AvenirHeavy;
+  //   font-size: 1.5rem;
+  //   display: flex;
+  //   align-items: center;
+  // }
+  .media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24rem;
+    gap: 30px;
+    > * {
+      flex: 1;
+      justify-content: center;
+      display: flex;
+      cursor: pointer;
+      font-family: AvenirRoman;
+      color: white;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

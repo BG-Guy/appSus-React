@@ -1,0 +1,10 @@
+.robot-filter {
+  display: flex;
+  gap: 20px;
+  padding: 1rem;
+  flex-wrap: wrap;
+  > div {
+    display: flex;
+    flex-direction: column;
+  }
+}

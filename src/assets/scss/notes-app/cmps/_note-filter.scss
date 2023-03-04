@@ -1,0 +1,64 @@
+.note-filter-container {
+  padding: 1rem;
+  .input-field-wrapper {
+    display: flex;
+
+    input {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+    }
+
+    .search-btn {
+      display: flex;
+      height: 2.25rem;
+      width: 2.25rem;
+      justify-content: center;
+      align-items: center;
+      & svg {
+        height: 1rem;
+        width: 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .filter-by-block {
+    display: flex;
+    .filter-by-title {
+      font-family: AvenirLight;
+    }
+    .label-filter {
+      display: flex;
+      span {
+        margin: 0 0.5rem;
+        & svg {
+          height: 1.5rem;
+          width: 1.5rem;
+          opacity: 0.3;
+          cursor: pointer;
+        }
+      }
+
+      .all-notes-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 50px;
+        border: 3px solid black;
+        opacity: 0.3;
+
+        small {
+          font-size: 8px;
+          height: 1.2rem;
+          width: 1.2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: AvenirHeavy;
+        }
+      }
+    }
+  }
+}
